@@ -9,14 +9,14 @@ body {
 }
 
 .app {
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url('./assets/winterbig.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
 }
 
 .app.warm {
-  background-image: url('./assets/warm-bg.jpg');
+  background-image: url('./assets/summerbig.jpg');
 }
 
 main {
@@ -31,7 +31,7 @@ main {
 }
 
 .search-box .search-bar {
-  display: block;
+  /* display: block; */
   width: 100%;
   padding: 15px;
 
@@ -41,7 +41,7 @@ main {
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 16px 16px 16px 16px;
   margin-top: -25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
@@ -81,7 +81,7 @@ main {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   border-radius: 16px;
 
   padding: 15px 25px;
@@ -89,10 +89,11 @@ main {
   color: #FFF;
   font-size: 102px;
   font-weight: 900;
+  
 
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
-  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
 }
 
 .weather-box .weather {
@@ -100,4 +101,27 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+/* .line{
+  background-color: #FFF;
+  height: 3px;
+  width: 218px;
+  color: #FFF;
+  position: absolute;
+  bottom: 494px;
+  left: 100px;
+} */
+
+@media only screen and (max-width: 600px){
+  .app {
+    background-image: url('./assets/winter.jpg');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+  }
+  .app.warm {
+    background-image: url('./assets/summer.jpg');
+  }
+  
+
 }
